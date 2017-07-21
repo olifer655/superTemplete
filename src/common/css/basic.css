@@ -1,0 +1,92 @@
+[v-cloak] {
+  visibility: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  box-sizing: border-box;
+  color: #333;
+  font-family: 'Helvetica Neue', Tahoma, Arial, PingFangSC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  line-height: 1.2;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+}
+
+body,
+ol,
+ul,
+dl,
+dd,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  outline: none;
+  color: #333;
+  text-decoration: none;
+}
+
+a,
+img {
+  -webkit-touch-callout: none;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  background-color: transparent;
+  appearance: none;
+}
+
+input[type="button"],
+input[type="submit"],
+
+/* 干掉自动填充的黄色背景 */
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 100px #fff inset;
+}
+
+.pull-right {
+  float: right!important;
+}

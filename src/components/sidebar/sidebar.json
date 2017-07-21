@@ -1,0 +1,167 @@
+[{
+	"name" : "文本",
+	"key" : "label",
+	"attrs": {
+		"content" : null,
+		"top": "10px",
+		"down":"10px",
+		"djtype":null,
+		"djaddr":null,
+		"fontSize":"1.2rem",
+		"noBorder": true
+	}
+},{
+	"name" : "图片",
+	"key" : "image",
+	"attrs": {
+		"type": "l1",
+		"content" : [
+			{"url":null,"djtype":null,"djaddr":null,"tip":""},
+			{"url":null,"djtype":null,"djaddr":null},
+			{"url":null,"djtype":null,"djaddr":null},
+			{"url":null,"djtype":null,"djaddr":null},
+			{"url":null,"djtype":null,"djaddr":null}
+		],
+		"isFull": true,
+		"top": "10px",
+		"down":"10px",
+		"noBorder": true
+	}
+},{
+	"name" : "商品",
+	"key" : "goods",
+	"attrs": {
+		"type": "l1",
+		"content" : [null],
+		"top": "10px",
+		"down":"10px",
+		"djtype":11,
+		"noBorder": true,
+		"group": 0
+	}
+},{
+	"name" : "匠人",
+	"key" : "craft",
+	"attrs": {
+		"content" : null,
+		"iDfDesc": "true",
+		"desc":"",
+		"top": "0px",
+		"down":"0px",
+		"djtype":2,
+		"djaddr":null,
+		"type":"lr",
+		"descColor": "#777777",
+		"noBorder": true
+	}
+},{
+	"name" : "视频",
+	"key" : "video",
+	"attrs": {
+		"type": "tx",
+		"txurl" : null,
+		"ulurl":null,
+		"top": "0px",
+		"down":"0px",
+		"txHvw": "56.25vw",
+		"txheight":"220px",
+		"noBorder": true
+	}
+},{
+	"name" : "图文",
+	"key" : "media",
+	"attrs": {
+		"type": "lirt",
+		"content" : null,
+		"imageUrl" : null,
+		"top": "10px",
+		"down":"10px",
+		"djtype":null,
+		"djaddr":null,
+		"contentColor": "#333333",
+		"noBorder": true
+	}
+},{
+	"name" : "留言",
+	"key" : "comment",
+	"attrs": {
+		"dispatch":"true",
+		"top":"0px",
+		"down":"0px",
+		"atid": "#atid#",
+		"invasible": false,
+		"craftsmans": [],
+		"content":{
+			"count":5,
+			"isEnterPage":true
+		},
+		"noBorder": true
+	}
+},{
+	"name" : "倒计时",
+	"key" : "countdown",
+	"attrs": {
+		"type": "big",
+		"top":"0px",
+		"down":"0px",
+		"content":null,
+		"noBorder": true,
+		"djtype": null,
+		"djaddr":null,
+		"timeColor": "",
+		"pic": ""
+	}
+},{
+	"name" : "查看更多",
+	"key" : "morebtn",
+	"attrs": {
+		"top":"10px",
+		"down":"10px",
+		"content":"查看更多",
+		"djtype":null,
+		"djaddr":null,
+		"fwClass": "redfw"
+	}
+},{
+	"name" : "顶部导航",
+	"key" : "topbar",
+	"attrs": {
+		"content":[{"name":"", "djtype":null, "djaddr":null, "id":null}],
+		"type":"link"
+	}
+},{
+	"name" : "左右浮钮",
+	"key" : "fixedbtn",
+	"attrs": {
+		"content":{
+			"left":{
+				"type": "none",
+				"djtype": null,
+				"djaddr":null,
+				"text":"",
+				"pic":""
+			},
+			"right":{
+				"type":"totop",
+				"djtype":"map",
+				"djaddr":"#",
+				"text":"",
+				"pic":""
+			}
+		}
+	}
+},{
+	"name" : "底部导航",
+	"key" : "footbar",
+	"attrs": {
+		"content":[{"name":"", "djtype":null, "djaddr":null}],
+		"type":"link"
+	}
+},{
+	"name" : "H5代码",
+	"key" : "custom",
+	"attrs": {
+		"content" : null,
+		"noBorder": true
+	}
+}]
