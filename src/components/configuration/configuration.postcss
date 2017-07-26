@@ -1,0 +1,56 @@
+.configArea {
+  width: 375px;
+  height: 90vh;
+  text-align: left;
+  padding: 0;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #dcdcdc;
+}
+
+.baseConfig {
+
+}
+
+.baseTitle {
+  font-size: 1.6rem;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: #F1F1F1;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+  cursor: default;
+  position: relative;
+  border-top: 1px solid #e8e8e8;
+}
+
+.show::after {
+  content: " ";
+  position: absolute;
+  right: 20px;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: #666 solid 1px;
+  border-left: 0;
+  border-bottom: 0;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: 0.8rem;
+}
+
+.no-show::after {
+  content: " ";
+  position: absolute;
+  right: 20px;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: #666 solid 1px;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(135deg);
+  top: 0.8rem;
+}

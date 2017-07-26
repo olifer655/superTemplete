@@ -29,11 +29,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: vueLoaderConfig
-      },
-      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
@@ -61,18 +56,13 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
+      }
     ]
   },
   plugins: [
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery'
-    }),
-    new webpack.LoaderOptionsPlugin({
-      vue: {
-        postcss: [require('postcss-cssnext')()]
-      }
     })
-  ],
+  ]
 }

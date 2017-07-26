@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-// const postcssConfig = require('./postcss.config')
+const postcssConfig = require('./postcss.config')
 const IS_DEV = process.env.npm_lifecycle_event === 'dev'
 
 module.exports = {
@@ -13,7 +13,12 @@ module.exports = {
         },
       },
       {
-        loader: 'postcss-loader'
+        loader: 'postcss-loader',
+        options: {
+          plugins: function () {
+            return postcssConfig.plugins
+          },
+        },
       }
     ]
     return IS_DEV
