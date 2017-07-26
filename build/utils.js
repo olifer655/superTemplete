@@ -11,7 +11,6 @@ exports.assetsPath = function (_path) {
 
 exports.cssLoaders = function (options) {
   options = options || {}
- console.log(options.sourceMap)
   var cssLoader = {
     loader: 'css-loader',
     options: {

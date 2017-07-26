@@ -17,8 +17,10 @@
   		</button>
     </div>
   </div>
-  <div class="content col-md-12">
-    <sidebar class="col-md-2"></sidebar>
+  <div :class="$style.content">
+    <sidebar></sidebar>
+    <main-content></main-content>
+    <configuration></configuration>
   </div>
 
 </div>
@@ -26,11 +28,18 @@
 
 <script>
 import Sidebar from './components/sidebar/sidebar'
+import MainContent from './components/mainContent/mainContent'
+import Configuration from './components/configuration/configuration'
 
 export default {
   name: 'app',
+  data() {
+    return {}
+  },
   components: {
-    Sidebar
+    Sidebar,
+    MainContent,
+    Configuration
   }
 }
 </script>
@@ -41,6 +50,11 @@ export default {
     padding: 10px;
   }
   .content {
-    padding: 0 86px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
   }
 </style>

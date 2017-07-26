@@ -1,9 +1,9 @@
 <template>
 <div>
-  <ul class="sidebar">
-    <label class="title">模块</label>
-    <li class="moudel" v-for="item in templateName">
-        <span>{{ item.name }}</span>
+  <ul :class="$style.sidebar">
+    <label :class="$style.title">模块</label>
+    <li :class="$style.moudel" draggable="true" v-for="item in templateName">
+        <span :class="$style.moudelName">{{ item.name }}</span>
         <i class="glyphicon glyphicon-plus-sign"></i>
     </li>
   </ul>
@@ -18,8 +18,11 @@ export default {
     return {
       templateName: TemplateName
     }
+  },
+  mounted() {
+
   }
 }
 </script>
 
-<style src="./sidebar.postcss"></style>
+<style module src="./sidebar.postcss"></style>
